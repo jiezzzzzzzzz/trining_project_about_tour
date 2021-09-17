@@ -1,0 +1,375 @@
+{%  extends 'base.html' %}
+
+{% block container %}
+
+{% if departure == 'msk' %}
+   <main class="container mt-3">
+    <h1 class="display-5 mt-4">Летим из Москвы</h1>
+    <p class="mb-4">Найдено 6 туров, от {{ hotels.9.price }} до {{ hotels.2.price }} и от {{ hotels.2.nights }} ночей до {{ hotels.12.nights }} ночей</p>
+    <!-- CARDS -->
+    <div class="row mt-5">
+      <div class="col-4">
+        <div class="card mb-4">
+          <img src="{{ url_for('static', filename='reduced_pic_300x200/002.jpg') }}" class="card-img-top img-fluid" alt="">
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.2.title }}</h2>
+            <p class="card-text">{{ hotels.2.description|truncate(130) }}</p>
+            <a href="/tours/2/" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <img src="https://images.unsplash.com/photo-1570214476695-19bd467e6f7a?ixlib=rb-1.2.1&ixid
+                       =eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="card-img-top img-fluid" alt="">
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.9.title }}</h2>
+            <p class="card-text">{{ hotels.9.description|truncate(130) }}</p>
+            <a href="/tours/9/" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <img src="https://images.unsplash.com/photo-1549109786-eb80da56e693?ixlib=rb-1.2.1&ixid
+                       =eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="card-img-top img-fluid" alt="">
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.8.title }}</h2>
+            <p class="card-text">{{ hotels.8.description|truncate(130) }}</p>
+            <a href="/tours/8" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <img src="https://images.unsplash.com/photo-1560200353-ce0a76b1d438?ixlib=rb-1.2.1&ixid
+                       =eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="card-img-top img-fluid" alt="">
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.10.title }}</h2>
+            <p class="card-text">{{ hotels.10.description|truncate(130) }}</p>
+            <a href="/tours/10/" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <img src="https://images.unsplash.com/photo-1477120128765-a0528148fed2?ixlib=rb-1.2.1&ixid
+                       =eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="card-img-top img-fluid" alt="">
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.11.title }}</h2>
+            <p class="card-text">{{ hotels.11.description|truncate(130) }}</p>
+            <a href="/tours/11/" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <img src="https://images.unsplash.com/photo-1440151050977-247552660a3b?ixlib=rb-1.2.1&ixid
+                       =eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="card-img-top img-fluid" alt="">
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.12.title }}</h2>
+            <p class="card-text">{{ hotels.12.description|truncate(130) }}</p>
+            <a href="/tours/12/" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+   </main>
+
+
+{% elif departure == 'spb' %}
+   <main class="container mt-3">
+    <h1 class="display-5 mt-4">Летим из Питера</h1>
+    <p class="mb-4">Найдено 6 туров, от {{ hotels.6.price }} до {{ hotels.14.price }} и от {{ hotels.6.nights }} ночей до {{ hotels.14.nights }} ночей</p>
+    <!-- CARDS -->
+    <div class="row mt-5">
+      <div class="col-4">
+        <div class="card mb-4">
+          <img src="{{ url_for('static', filename='reduced_pic_300x200/003.jpg') }}" class="card-img-top img-fluid" alt="">
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.3.title }}</h2>
+            <p class="card-text">{{ hotels.3.description|truncate(130) }}</p>
+            <a href="/tours/3/" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <img src="{{ url_for('static', filename='reduced_pic_300x200/006.jpg') }}" class="card-img-top img-fluid" alt="">
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.6.title }}</h2>
+            <p class="card-text">{{ hotels.6.description|truncate(130) }}</p>
+            <a href="/tours/6/" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <img src="https://images.unsplash.com/photo-1468824357306-a439d58ccb1c?ixlib=rb-1.2.1&ixid
+                   =eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="card-img-top img-fluid" alt="">
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.7.title }}</h2>
+            <p class="card-text">{{ hotels.7.description|truncate(130) }}</p>
+            <a href="/tours/7/" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <img src="https://images.unsplash.com/photo-1549109786-eb80da56e693?ixlib=rb-1.2.1&ixid
+                       =eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="card-img-top img-fluid" alt="">
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.8.title }}</h2>
+            <p class="card-text">{{ hotels.8.description|truncate(130) }}</p>
+            <a href="/tours/8/" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <img src="https://images.unsplash.com/photo-1509600110300-21b9d5fedeb7?ixlib=rb-1.2.1&ixid
+                       =eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="card-img-top img-fluid" alt="">
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.14.title }}</h2>
+            <p class="card-text">{{ hotels.14.description|truncate(130) }}</p>
+            <a href="/tours/14/" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <img src="https://images.unsplash.com/photo-1568084680786-a84f91d1153c?ixlib=rb-1.2.1&ixid
+                       =eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="card-img-top img-fluid" alt="">
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.15.title }}</h2>
+            <p class="card-text">{{ hotels.15.description|truncate(130) }}</p>
+            <a href="/tours/15/" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+   </main>
+
+
+{% elif departure == 'nsk' %}
+   <main class="container mt-3">
+    <h1 class="display-5 mt-4">Летим из Новосибирска</h1>
+    <p class="mb-4">Найдено 6 туров, от {{ hotels.1.price }} до {{ hotels.15.price }} и от {{ hotels.1.nights }} ночей до {{ hotels.4.nights }} ночей</p>
+    <!-- CARDS -->
+    <div class="row mt-5">
+      <div class="col-4">
+        <div class="card mb-4">
+          <img src="{{ url_for('static', filename='reduced_pic_300x200/001.jpg') }}" class="card-img-top img-fluid" alt="">
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.1.title }}</h2>
+            <p class="card-text">{{ hotels.1.description|truncate(130) }}</p>
+            <a href="/tours/1/" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <img src="{{ url_for('static', filename='reduced_pic_300x200/003.jpg') }}" class="card-img-top img-fluid" alt="">
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.3.title }}</h2>
+            <p class="card-text">{{ hotels.3.description|truncate(130) }}</p>
+            <a href="/tours/3/" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <img src="https://images.unsplash.com/photo-1568084680786-a84f91d1153c?ixlib=rb-1.2.1&ixid
+                       =eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="card-img-top img-fluid" alt="">
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.15.title }}</h2>
+            <p class="card-text">{{ hotels.15.description|truncate(130) }}</p>
+            <a href="/tours/7/" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <img src="{{ url_for('static', filename='reduced_pic_300x200/004.jpg') }}" class="card-img-top img-fluid" alt="">
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.4.title }}</h2>
+            <p class="card-text">{{ hotels.4.description|truncate(130) }}</p>
+            <a href="/tours/4/" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <img src="https://images.unsplash.com/photo-1553653924-39b70295f8da?ixlib=rb-1.2.1&auto=format&fit=crop&w
+                       =800&q=60" class="card-img-top img-fluid" alt="">
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.13.title }}</h2>
+            <p class="card-text">{{ hotels.13.description|truncate(130) }}</p>
+            <a href="/tours/13/" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <img src="{{ url_for('static', filename='reduced_pic_300x200/005.jpg') }}" class="card-img-top img-fluid" alt="">
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.5.title }}</h2>
+            <p class="card-text">{{ hotels.5.description|truncate(130) }}</p>
+            <a href="/tours/5/" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+   </main>
+
+
+{% elif departure == 'ekb' %}
+   <main class="container mt-3">
+    <h1 class="display-5 mt-4">Летим из Екатеринбурга</h1>
+    <p class="mb-4">Найдено 15 туров, от 26 000 до 84 600 и от 4 ночей до 15 ночей</p>
+    <!-- CARDS -->
+    <div class="row mt-5">
+      <div class="col-4">
+        <div class="card mb-4">
+          <img src="{{ url_for('static', filename='reduced_pic_300x200/004.jpg') }}" class="card-img-top img-fluid" alt="">
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.4.title }}</h2>
+            <p class="card-text">{{ hotels.4.description|truncate(130) }}</p>
+            <a href="/tours/4/" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <img src="{{ url_for('static', filename='reduced_pic_300x200/001.jpg') }}" class="card-img-top img-fluid" alt="">
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.1.title }}</h2>
+            <p class="card-text">{{ hotels.1.description|truncate(130) }}</p>
+            <a href="/tours/1/" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <img src="{{ url_for('static', filename='reduced_pic_300x200/002.jpg') }}" class="card-img-top img-fluid" alt="">
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.2.title }}</h2>
+            <p class="card-text">{{ hotels.2.description|truncate(130) }}</p>
+            <a href="/tours/2/" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <img src="{{ url_for('static', filename='reduced_pic_300x200/005.jpg') }}" class="card-img-top img-fluid" alt="">
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.5.title }}</h2>
+            <p class="card-text">{{ hotels.5.description|truncate(130) }}</p>
+            <a href="/tours/5/" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <img src="{{ url_for('static', filename='reduced_pic_300x200/006.jpg') }}" class="card-img-top img-fluid" alt="">
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.6.title }}</h2>
+            <p class="card-text">{{ hotels.6.description|truncate(130) }}</p>
+            <a href="/tours/6/" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <img src="https://images.unsplash.com/photo-1468824357306-a439d58ccb1c?ixlib=rb-1.2.1&ixid
+                   =eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="card-img-top img-fluid" alt="">
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.7.title }}</h2>
+            <p class="card-text">{{ hotels.7.description|truncate(130) }}</p>
+            <a href="/tours/7/" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+   </main>
+
+{% elif departure == 'kzn' %}
+   <main class="container mt-3">
+    <h1 class="display-5 mt-4">Летим из Казани</h1>
+    <p class="mb-4">Найдено 6 туров, от {{ hotels.9.price }} до {{ hotels.14.price }} и от {{ hotels.13.nights }} ночей до {{ hotels.12.nights }} ночей</p>
+    <!-- CARDS -->
+    <div class="row mt-5">
+      <div class="col-4">
+        <div class="card mb-4">
+          <img src="https://images.unsplash.com/photo-1570214476695-19bd467e6f7a?ixlib=rb-1.2.1&ixid
+                       =eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="card-img-top img-fluid" alt="">
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.9.title }}</h2>
+            <p class="card-text">{{ hotels.9.description|truncate(130) }}</p>
+            <a href="/tours/9/" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <img src="https://images.unsplash.com/photo-1560200353-ce0a76b1d438?ixlib=rb-1.2.1&ixid
+                       =eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="card-img-top img-fluid" alt="">
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.10.title }}</h2>
+            <p class="card-text">{{ hotels.10.description|truncate(130) }}</p>
+            <a href="/tours/10/" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <img src="https://images.unsplash.com/photo-1477120128765-a0528148fed2?ixlib=rb-1.2.1&ixid
+                       =eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="card-img-top img-fluid" alt="">
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.11.title }}</h2>
+            <p class="card-text">{{ hotels.11.description|truncate(130) }}</p>
+            <a href="/tours/11/" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <img src="https://images.unsplash.com/photo-1440151050977-247552660a3b?ixlib=rb-1.2.1&ixid
+                       =eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="card-img-top img-fluid" alt="">
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.12.title }}</h2>
+            <p class="card-text">{{ hotels.12.description|truncate(130) }}</p>
+            <a href="/tours/12/" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <img src="https://images.unsplash.com/photo-1553653924-39b70295f8da?ixlib=rb-1.2.1&auto=format&fit=crop&w
+                       =800&q=60" class="card-img-top img-fluid" alt="">
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.13.title }}</h2>
+            <p class="card-text">{{ hotels.13.description|truncate(130) }}</p>
+            <a href="/tours/13/" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <img src="https://images.unsplash.com/photo-1509600110300-21b9d5fedeb7?ixlib=rb-1.2.1&ixid
+                       =eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="card-img-top img-fluid" alt="">
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.14.title }}</h2>
+            <p class="card-text">{{ hotels.14.description|truncate(130) }}</p>
+            <a href="/tours/14/" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+   </main>
+
+
+{% else %}
+    <p>Ничего не нашлось :(</p>
+{% endif %}
+{% endblock %}

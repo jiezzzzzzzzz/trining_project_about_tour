@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+
+{% block container %}
+
+    <main class="container mt-3">
+    <section class="jumbotron text-center mt-4" style="">
+      <h1 class="display-4">Всякие туры</h1>
+      <p class="lead">Для тех, кого отвлекают дома</p>
+      <p class="mt-5 w-50 mx-auto">Лучшие направления в канаву!</p>
+    </section>
+    <!-- CARDS -->
+    <div class="row mt-5">
+      <div class="col-4">
+        <div class="card mb-4">
+          <div class="embed-responsive embed-responsive-16by9">
+             <img class="card-img-top embed-responsive-item" src="{{ url_for('static', filename='reduced_pic_300x200/001.jpg') }}" alt="" />
+          </div>
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.1.title }}</h2>
+            <p class="card-text">{{ hotels.1.description }}</p>
+            <a href="/tours/1/" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <div class="embed-responsive embed-responsive-16by9">
+             <img class="card-img-top embed-responsive-item" src="{{ url_for('static', filename='reduced_pic_300x200/002.jpg') }}" alt="" />
+          </div>
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.2.title }}</h2>
+            <p class="card-text">{{ hotels.2.description|truncate(70) }}</p>
+            <a href="/tours/2/" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <div class="embed-responsive embed-responsive-16by9">
+             <img class="card-img-top embed-responsive-item" src="{{ url_for('static', filename='reduced_pic_300x200/003.jpg') }}" alt="" />
+          </div>
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.3.title }}</h2>
+            <p class="card-text">{{ hotels.3.description|truncate(71) }}</p>
+            <a href="/tours/3/" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <div class="embed-responsive embed-responsive-16by9">
+             <img class="card-img-top embed-responsive-item" src="{{ url_for('static', filename='reduced_pic_300x200/004.jpg') }}" alt="" />
+          </div>
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.4.title }}</h2>
+            <p class="card-text">{{ hotels.4.description }}</p>
+            <a href="/tours/4/" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <div class="embed-responsive embed-responsive-16by9">
+             <img class="card-img-top embed-responsive-item" src="{{ url_for('static', filename='reduced_pic_300x200/005.jpg') }}" alt="" />
+          </div>
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.5.title }}</h2>
+            <p class="card-text">{{ hotels.5.description|truncate(130) }}</p>
+            <a href="/tours/5/" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <div class="embed-responsive embed-responsive-16by9">
+             <img class="card-img-top embed-responsive-item" src="{{ url_for('static', filename='reduced_pic_300x200/006.jpg') }}" alt="" />
+          </div>
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ hotels.6.title }}</h2>
+            <p class="card-text">{{ hotels.6.description|truncate(130) }}</p>
+            <a href="/tours/6/" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+{% endblock %}

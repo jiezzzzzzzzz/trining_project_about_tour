@@ -1,0 +1,200 @@
+{% extends 'base.html' %}
+
+{% block container %}
+
+{% if tour_id == 1 %}
+    <main class="container mt-3">
+    <section class="mt-3 pb-5">
+      <h1 class="display-3 mt-4">{{ hotels.1.title }}</h1>
+      <!-- HERO -->
+      <p class="lead">Из Новосибирска и Екатеринбурга {{ hotels.1.nights }} ночей</p>
+      <img src="{{ url_for('static', filename='images/1.jpg') }}" class="w-75" alt="">
+      <p class="my-4 w-75">{{ hotels.1.description }}</p>
+      <a href="/buy/" class="btn btn-success btn-lg">Купить тур за {{ hotels.1.price }}</a>
+    </section>
+  </main>
+
+
+{% elif tour_id == 2 %}
+    <main class="container mt-3">
+    <section class="mt-3 pb-5">
+      <h1 class="display-3 mt-4">{{ hotels.2.title }}</h1>
+      <!-- HERO -->
+      <p class="lead">Из Москвы и Екатеринбурга {{ hotels.2.nights }} ночей</p>
+      <img src="{{ url_for('static', filename='images/2.jpg') }}" class="w-75" alt="">
+      <p class="my-4 w-75">{{ hotels.2.description }}</p>
+      <a href="/buy/" class="btn btn-success btn-lg">Купить тур за {{ hotels.2.price }}</a>
+    </section>
+  </main>
+
+
+{% elif tour_id == 3 %}
+    <main class="container mt-3">
+    <section class="mt-3 pb-5">
+      <h1 class="display-3 mt-4">{{ hotels.3.title }}</h1>
+      <!-- HERO -->
+      <p class="lead">Из Новосибирска и Санкт-Петербурга {{ hotels.3.nights }} ночей</p>
+      <img src="{{ url_for('static', filename='images/3.jpg') }}" class="w-75" alt="">
+      <p class="my-4 w-75">{{ hotels.3.description }}</p>
+      <a href="/buy/" class="btn btn-success btn-lg">Купить тур за {{ hotels.3.price}}</a>
+    </section>
+  </main>
+
+{% elif tour_id == 4 %}
+    <main class="container mt-3">
+    <section class="mt-3 pb-5">
+      <h1 class="display-3 mt-4">{{ hotels.4.title }}</h1>
+      <!-- HERO -->
+      <p class="lead">Из Екатеринбурга и Новосибирска {{ hotels.4.nights }} ночей</p>
+      <img src="{{ url_for('static', filename='images/4.jpg') }}" class="w-75" alt="">
+      <p class="my-4 w-75">{{ hotels.4.description }}</p>
+      <a href="/buy/" class="btn btn-success btn-lg">Купить тур за {{ hotels.4.price }}</a>
+    </section>
+  </main>
+
+
+{% elif tour_id == 5 %}
+    <main class="container mt-3">
+    <section class="mt-3 pb-5">
+      <h1 class="display-3 mt-4">{{ hotels.5.title }}</h1>
+      <!-- HERO -->
+      <p class="lead">Из Екатеринбурга и Новосибирска {{ hotels.5.nights }} ночей</p>
+      <img src="{{ url_for('static', filename='images/5.jpg') }}" class="w-75" alt="">
+      <p class="my-4 w-75">{{ hotels.5.description }}</p>
+      <a href="/buy/" class="btn btn-success btn-lg">Купить тур за {{ hotels.5.price }}</a>
+    </section>
+  </main>
+
+{% elif tour_id == 6 %}
+    <main class="container mt-3">
+    <section class="mt-3 pb-5">
+      <h1 class="display-3 mt-4">{{ hotels.6.title }}</h1>
+      <!-- HERO -->
+      <p class="lead">Из Питера и Екатеринбурга {{ hotels.6.nights }} ночь</p>
+      <img src="{{ url_for('static', filename='images/6.jpg') }}" class="w-75" alt="">
+      <p class="my-4 w-75">{{ hotels.6.description }}</p>
+      <a href="/buy/" class="btn btn-success btn-lg">Купить тур за {{ hotels.6.price}}</a>
+    </section>
+  </main>
+
+{% elif tour_id == 7 %}
+    <main class="container mt-3">
+    <section class="mt-3 pb-5">
+      <h1 class="display-3 mt-4">{{ hotels.7.title }}</h1>
+      <!-- HERO -->
+      <p class="lead">Из Питера и Екатеринбурга {{ hotels.7.nights }} ночей</p>
+      <img src="https://images.unsplash.com/photo-1468824357306-a439d58ccb1c?ixlib=rb-1.2.1&ixid
+                   =eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="w-75" alt="">
+      <p class="my-4 w-75">{{ hotels.7.description }}</p>
+      <a href="/buy/" class="btn btn-success btn-lg">Купить тур за {{ hotels.7.price}}</a>
+    </section>
+  </main>
+
+{% elif tour_id == 8 %}
+    <main class="container mt-3">
+    <section class="mt-3 pb-5">
+      <h1 class="display-3 mt-4">{{ hotels.8.title }}</h1>
+      <!-- HERO -->
+      <p class="lead">Из Москвы и Питера {{ hotels.8.nights }} ночей</p>
+      <img src="https://images.unsplash.com/photo-1549109786-eb80da56e693?ixlib=rb-1.2.1&ixid
+                       =eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60">
+      <p class="my-4 w-75">{{ hotels.8.description }}</p>
+      <a href="/buy/" class="btn btn-success btn-lg">Купить тур за {{ hotels.8.price}}</a>
+    </section>
+  </main>
+
+{% elif tour_id == 9 %}
+    <main class="container mt-3">
+    <section class="mt-3 pb-5">
+      <h1 class="display-3 mt-4">{{ hotels.9.title }}</h1>
+      <!-- HERO -->
+      <p class="lead">Из Москвы и Казани {{ hotels.9.nights }} ночей</p>
+      <img src="https://images.unsplash.com/photo-1570214476695-19bd467e6f7a?ixlib=rb-1.2.1&ixid
+                       =eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="w-75" alt="">
+      <p class="my-4 w-75">{{ hotels.9.description }}</p>
+      <a href="/buy/" class="btn btn-success btn-lg">Купить тур за {{ hotels.9.price}}</a>
+    </section>
+  </main>
+
+{% elif tour_id == 10 %}
+    <main class="container mt-3">
+    <section class="mt-3 pb-5">
+      <h1 class="display-3 mt-4">{{ hotels.10.title }}</h1>
+      <!-- HERO -->
+      <p class="lead">Из Москвы и Казани {{ hotels.10.nights }} ночей</p>
+      <img src="https://images.unsplash.com/photo-1560200353-ce0a76b1d438?ixlib=rb-1.2.1&ixid
+                       =eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="w-75" alt="">
+      <p class="my-4 w-75">{{ hotels.10.description }}</p>
+      <a href="/buy/" class="btn btn-success btn-lg">Купить тур за {{ hotels.10.price}}</a>
+    </section>
+  </main>
+
+{% elif tour_id == 11 %}
+    <main class="container mt-3">
+    <section class="mt-3 pb-5">
+      <h1 class="display-3 mt-4">{{ hotels.11.title }}</h1>
+      <!-- HERO -->
+      <p class="lead">Из Москвы и Казани {{ hotels.11.nights }} ночей</p>
+      <img src="https://images.unsplash.com/photo-1477120128765-a0528148fed2?ixlib=rb-1.2.1&ixid
+                       =eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="w-75" alt="">
+      <p class="my-4 w-75">{{ hotels.11.description }}</p>
+      <a href="/buy/" class="btn btn-success btn-lg">Купить тур за {{ hotels.11.price}}</a>
+    </section>
+  </main>
+
+{% elif tour_id == 12 %}
+    <main class="container mt-3">
+    <section class="mt-3 pb-5">
+      <h1 class="display-3 mt-4">{{ hotels.12.title }}</h1>
+      <!-- HERO -->
+      <p class="lead">Из Питера и Казани {{ hotels.12.nights }} ночей</p>
+      <img src="https://images.unsplash.com/photo-1440151050977-247552660a3b?ixlib=rb-1.2.1&ixid
+                       =eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="w-75" alt="">
+      <p class="my-4 w-75">{{ hotels.12.description }}</p>
+      <a href="/buy/" class="btn btn-success btn-lg">Купить тур за {{ hotels.12.price}}</a>
+    </section>
+  </main>
+
+{% elif tour_id == 13 %}
+    <main class="container mt-3">
+    <section class="mt-3 pb-5">
+      <h1 class="display-3 mt-4">{{ hotels.13.title }}</h1>
+      <!-- HERO -->
+      <p class="lead">Из Новосибирска и Казани {{ hotels.13.nights }} ночей</p>
+      <img src="https://images.unsplash.com/photo-1553653924-39b70295f8da?ixlib=rb-1.2.1&auto=format&fit=crop&w
+                       =800&q=60" class="w-75" alt="">
+      <p class="my-4 w-75">{{ hotels.13.description }}</p>
+      <a href="/buy/" class="btn btn-success btn-lg">Купить тур за {{ hotels.13.price}}</a>
+    </section>
+  </main>
+
+{% elif tour_id == 14 %}
+    <main class="container mt-3">
+    <section class="mt-3 pb-5">
+      <h1 class="display-3 mt-4">{{ hotels.14.title }}</h1>
+      <!-- HERO -->
+      <p class="lead">Из Казани и Питера {{ hotels.14.nights }} ночей</p>
+      <img src="https://images.unsplash.com/photo-1509600110300-21b9d5fedeb7?ixlib=rb-1.2.1&ixid
+                       =eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="w-75" alt="">
+      <p class="my-4 w-75">{{ hotels.14.description }}</p>
+      <a href="/buy/" class="btn btn-success btn-lg">Купить тур за {{ hotels.14.price}}</a>
+    </section>
+  </main>
+
+{% elif tour_id == 15 %}
+    <main class="container mt-3">
+    <section class="mt-3 pb-5">
+      <h1 class="display-3 mt-4">{{ hotels.15.title }}</h1>
+      <!-- HERO -->
+      <p class="lead">Из Питера и Новосибирска {{ hotels.15.nights }} ночей</p>
+      <img src="https://images.unsplash.com/photo-1568084680786-a84f91d1153c?ixlib=rb-1.2.1&ixid
+                       =eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="w-75" alt="">
+      <p class="my-4 w-75">{{ hotels.15.description }}</p>
+      <a href="/buy/" class="btn btn-success btn-lg">Купить тур за {{ hotels.15.price}}</a>
+    </section>
+  </main>
+
+{% else %}
+    <h1>done</h1>
+{% endif %}
+{% endblock %}
